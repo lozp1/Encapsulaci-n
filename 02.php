@@ -1,6 +1,4 @@
-<?php
-
-declare(strict_types=1);
+<?php declare(strict_types=1);
 include 'includes/header.php';
 
 // ENCAPSULACIÓN
@@ -14,7 +12,7 @@ class Producto {
     }
 
     public function mostrarProducto() : void {
-        echo "El Producto es: " . $this->nombre . " y su precio es de: " . $this->precio;
+        echo "El Producto es: " . $this->nombre . " y su precio es de: " . $this->precio; 
     }
 
     // acceder -obtener
