@@ -15,21 +15,19 @@ class Producto {
         echo "El Producto es: " . $this->nombre . " y su precio es de: " . $this->precio; 
     }
 
-    // acceder -obtener
+    // acceder | obtener
     public function getNombre () : string {
         return $this-> nombre;
     }
 
-    // modificar - establecer
+    // modificar | establecer
     public function setNombre (string $nombre){
         return $this -> nombre = $nombre;
     }
-
 }
 
 // crear instancia
 $producto = new Producto("Tablet", 200, true);
-//$producto->mostrarProducto();
 echo $producto -> getNombre();
 $producto -> setNombre("Nuevo Nombre");
 
@@ -38,11 +36,6 @@ var_dump($producto);
 echo "</pre>";
 
 $producto2 = new Producto("Monitor", 300, true);
-//$producto2->mostrarProducto();
 echo $producto2 -> getNombre();
-
-//echo "<pre>";
-//var_dump($producto2);
-//echo "</pre>";
 
 include 'includes/footer.php';
